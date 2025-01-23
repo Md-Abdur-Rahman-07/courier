@@ -49,7 +49,7 @@ header("location:index.php?page=home");
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                Remember Me me
               </label>
             </div>
           </div>
