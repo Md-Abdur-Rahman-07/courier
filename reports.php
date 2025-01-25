@@ -1,7 +1,7 @@
 <?php include 'db_connect.php' ?>
 <?php $status = isset($_GET['status']) ? $_GET['status'] : 'all' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-dark">
 		<div class="card-body">
 			<div class="d-flex w-100 px-1 py-2 justify-content-center align-items-center">
 			<?php 
@@ -17,7 +17,7 @@
                 <input type="date" id="date_from" class="form-control form-control-sm col-sm-3" value="<?php echo isset($_GET['date_from']) ? date("Y-m-d",strtotime($_GET['date_from'])) : '' ?>">
                 <label for="date_to" class="mx-1">To</label>
                 <input type="date" id="date_to" class="form-control form-control-sm col-sm-3" value="<?php echo isset($_GET['date_to']) ? date("Y-m-d",strtotime($_GET['date_to'])) : '' ?>">
-                <button class="btn btn-sm btn-primary mx-1 bg-gradient-primary" type="button" id='view_report'>View Report</button>
+                <button class="btn btn-sm btn-dark mx-1 bg-gradient-dark" type="button" id='view_report'>View Report</button>
 			</div>
 		</div>
 	</div>

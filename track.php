@@ -1,13 +1,13 @@
 <?php include 'db_connect.php' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-dark">
 		<div class="card-body">
 			<div class="d-flex w-100 px-1 py-2 justify-content-center align-items-center">
 				<label for="">Enter Tracking Number</label>
 				<div class="input-group col-sm-5">
                     <input type="search" id="ref_no" class="form-control form-control-sm" placeholder="Type the tracking number here">
                     <div class="input-group-append">
-                        <button type="button" id="track-btn" class="btn btn-sm btn-primary btn-gradient-primary">
+                        <button type="button" id="track-btn" class="btn btn-sm btn-dark btn-gradient-dark">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>

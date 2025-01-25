@@ -14,7 +14,7 @@
 </div>
 
 <div class="modal-footer display p-0 m-0">
-        <button class="btn btn-primary" form="update_status">Update</button>
+        <button class="btn btn-dark" form="update_status">Update</button>
         <button type="button" class="btn btn-secondary" onclick="uni_modal('Parcel\'s Details','view_parcel.php?id=<?php echo $_GET['id'] ?>','large')">Close</button>
 </div>
 <style>

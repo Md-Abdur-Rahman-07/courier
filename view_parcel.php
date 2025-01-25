@@ -29,7 +29,7 @@ $branch = array();
 		<div class="row">
 			<div class="col-md-6">
 				<div class="callout callout-info">
-					<b class="border-bottom border-primary">Sender Information</b>
+					<b class="border-bottom border-dark">Sender Information</b>
 					<dl>
 						<dt>Name:</dt>
 						<dd><?php echo ucwords($sender_name) ?></dd>
@@ -40,7 +40,7 @@ $branch = array();
 					</dl>
 				</div>
 				<div class="callout callout-info">
-					<b class="border-bottom border-primary">Recipient Information</b>
+					<b class="border-bottom border-dark">Recipient Information</b>
 					<dl>
 						<dt>Name:</dt>
 						<dd><?php echo ucwords($recipient_name) ?></dd>
@@ -53,7 +53,7 @@ $branch = array();
 			</div>
 			<div class="col-md-6">
 				<div class="callout callout-info">
-					<b class="border-bottom border-primary">Parcel Details</b>
+					<b class="border-bottom border-dark">Parcel Details</b>
 						<div class="row">
 							<div class="col-sm-6">
 								<dl>
@@ -72,7 +72,7 @@ $branch = array();
 									<dt>length:</dt>
 									<dd><?php echo $length ?></dd>
 									<dt>Type:</dt>
-									<dd><?php echo $type == 1 ? "<span class='badge badge-primary'>Deliver to Recipient</span>":"<span class='badge badge-info'>Pickup</span>" ?></dd>
+									<dd><?php echo $type == 1 ? "<span class='badge badge-dark'>Deliver to Recipient</span>":"<span class='badge badge-info'>Pickup</span>" ?></dd>
 								</dl>	
 							</div>
 						</div>
@@ -94,16 +94,16 @@ $branch = array();
 									echo "<span class='badge badge-pill badge-info'> Shipped</span>";
 									break;
 								case '3':
-									echo "<span class='badge badge-pill badge-primary'> In-Transit</span>";
+									echo "<span class='badge badge-pill badge-dark'> In-Transit</span>";
 									break;
 								case '4':
-									echo "<span class='badge badge-pill badge-primary'> Arrived At Destination</span>";
+									echo "<span class='badge badge-pill badge-dark'> Arrived At Destination</span>";
 									break;
 								case '5':
-									echo "<span class='badge badge-pill badge-primary'> Out for Delivery</span>";
+									echo "<span class='badge badge-pill badge-dark'> Out for Delivery</span>";
 									break;
 								case '6':
-									echo "<span class='badge badge-pill badge-primary'> Ready to Pickup</span>";
+									echo "<span class='badge badge-pill badge-dark'> Ready to Pickup</span>";
 									break;
 								case '7':
 									echo "<span class='badge badge-pill badge-success'>Delivered</span>";
@@ -122,7 +122,7 @@ $branch = array();
 							}
 
 							?>
-							<span class="btn badge badge-primary bg-gradient-primary" id='update_status'><i class="fa fa-edit"></i> Update Status</span>
+							<span class="btn badge badge-dark bg-gradient-dark" id='update_status'><i class="fa fa-edit"></i> Update Status</span>
 						</dd>
 
 					</dl>

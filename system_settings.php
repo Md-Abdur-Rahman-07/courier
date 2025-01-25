@@ -1,7 +1,7 @@
 <?php if(!isset($conn)){ include 'db_connect.php'; } ?>
 
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-dark">
 		<div class="card-body">
 			<form action="" id="manage-system_settings">
 
@@ -50,7 +50,7 @@
     	</div>
     	<div class="card-footer border-top border-info">
     		<div class="d-flex w-100 justify-content-center align-items-center">
-    			<button class="btn btn-flat  bg-gradient-primary mx-2" form="manage-system_settings">Save</button>
+    			<button class="btn btn-flat  bg-gradient-dark mx-2" form="manage-system_settings">Save</button>
     			<button class="btn btn-flat bg-gradient-secondary mx-2" type="button">Cancel</button>
     		</div>
     	</div>

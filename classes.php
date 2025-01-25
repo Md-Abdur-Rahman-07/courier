@@ -1,9 +1,9 @@
 <?php include'db_connect.php' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-dark">
 		<div class="card-header">
 			<div class="card-tools">
-				<a class="btn btn-block btn-sm btn-default btn-flat border-primary new_class" href="javascript:void(0)"><i class="fa fa-plus"></i> Add New</a>
+				<a class="btn btn-block btn-sm btn-default btn-flat border-dark new_class" href="javascript:void(0)"><i class="fa fa-plus"></i> Add New</a>
 			</div>
 		</div>
 		<div class="card-body">
@@ -33,7 +33,7 @@
 						<td><b><?php echo $row['section'] ?></b></td>
 						<td class="text-center">
 		                    <div class="btn-group">
-		                        <a href="javascript:void(0)" data-id='<?php echo $row['id'] ?>' class="btn btn-primary btn-flat manage_class">
+		                        <a href="javascript:void(0)" data-id='<?php echo $row['id'] ?>' class="btn btn-dark btn-flat manage_class">
 		                          <i class="fas fa-edit"></i>
 		                        </a>
 		                        <button type="button" class="btn btn-danger btn-flat delete_class" data-id="<?php echo $row['id'] ?>">

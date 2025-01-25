@@ -1,5 +1,6 @@
 <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
+
+  <nav class="main-header navbar navbar-expand navbar-light navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <?php if(isset($_SESSION['login_id'])): ?>
@@ -8,7 +9,7 @@
       </li>
     <?php endif; ?>
       <li>
-        <a class="nav-link text-white"  href="./" role="button"> <large><b><?php echo $_SESSION['system']['name'] ?></b></large></a>
+        <a class="nav-link text-white px-3 py-0"  href="./" role="button"> <img style="height: 100%;" src="assets/uploads/logo.png" alt=""></a>
       </li>
     </ul>
 

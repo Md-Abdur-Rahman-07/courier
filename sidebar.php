@@ -1,4 +1,4 @@
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-light-dark elevation-4">
     <div class="dropdown">
    	<a href="./" class="brand-link">
         <?php if($_SESSION['login_type'] == 1): ?>
@@ -111,14 +111,14 @@
               </p>
             </a>
           </li>  
-           <li class="nav-item dropdown">
+           <!-- <li class="nav-item dropdown">
             <a href="./index.php?page=reports" class="nav-link nav-reports">
               <i class="nav-icon fas fa-file"></i>
               <p>
                 Reports
               </p>
             </a>
-          </li>  
+          </li>   -->
         </ul>
       </nav>
     </div>

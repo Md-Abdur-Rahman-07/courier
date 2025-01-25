@@ -1,9 +1,9 @@
 <?php include'db_connect.php' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-dark">
 		<div class="card-header">
 			<div class="card-tools">
-				<a class="btn btn-block btn-sm btn-default btn-flat border-primary " href="./index.php?page=new_parcel"><i class="fa fa-plus"></i> Add New</a>
+				<a class="btn btn-block btn-sm btn-default btn-flat border-dark " href="./index.php?page=new_parcel"><i class="fa fa-plus"></i> Add New</a>
 			</div>
 		</div>
 		<div class="card-body">
@@ -57,16 +57,16 @@
 									echo "<span class='badge badge-pill badge-info'> Shipped</span>";
 									break;
 								case '3':
-									echo "<span class='badge badge-pill badge-primary'> In-Transit</span>";
+									echo "<span class='badge badge-pill badge-dark'> In-Transit</span>";
 									break;
 								case '4':
-									echo "<span class='badge badge-pill badge-primary'> Arrived At Destination</span>";
+									echo "<span class='badge badge-pill badge-dark'> Arrived At Destination</span>";
 									break;
 								case '5':
-									echo "<span class='badge badge-pill badge-primary'> Out for Delivery</span>";
+									echo "<span class='badge badge-pill badge-dark'> Out for Delivery</span>";
 									break;
 								case '6':
-									echo "<span class='badge badge-pill badge-primary'> Ready to Pickup</span>";
+									echo "<span class='badge badge-pill badge-dark'> Ready to Pickup</span>";
 									break;
 								case '7':
 									echo "<span class='badge badge-pill badge-success'>Delivered</span>";
@@ -91,7 +91,7 @@
 		                    	<button type="button" class="btn btn-info btn-flat view_parcel" data-id="<?php echo $row['id'] ?>">
 		                          <i class="fas fa-eye"></i>
 		                        </button>
-		                        <a href="index.php?page=edit_parcel&id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
+		                        <a href="index.php?page=edit_parcel&id=<?php echo $row['id'] ?>" class="btn btn-dark btn-flat ">
 		                          <i class="fas fa-edit"></i>
 		                        </a>
 		                        <button type="button" class="btn btn-danger btn-flat delete_parcel" data-id="<?php echo $row['id'] ?>">

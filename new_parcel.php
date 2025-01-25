@@ -7,7 +7,7 @@
   }
 </style>
 <div class="col-lg-12">
-  <div class="card card-outline card-primary">
+  <div class="card card-outline card-dark">
     <div class="card-body">
       <form action="" id="manage-parcel">
         <input type="hidden" name="id" value="<?php echo isset($id) ? $id : '' ?>">
@@ -123,7 +123,7 @@
         <?php if (!isset($id)): ?>
           <div class="row">
             <div class="col-md-12 d-flex justify-content-end">
-              <button class="btn btn-sm btn-primary bg-gradient-primary" type="button" id="new_parcel"><i class="fa fa-item"></i> Add Item</button>
+              <button class="btn btn-sm btn-dark bg-gradient-dark" type="button" id="new_parcel"><i class="fa fa-item"></i> Add Item</button>
             </div>
           </div>
         <?php endif; ?>
@@ -131,7 +131,7 @@
     </div>
     <div class="card-footer border-top border-info">
       <div class="d-flex w-100 justify-content-center align-items-center">
-        <button class="btn btn-flat  bg-gradient-primary mx-2" form="manage-parcel">Save</button>
+        <button class="btn btn-flat  bg-gradient-dark mx-2" form="manage-parcel">Save</button>
         <a class="btn btn-flat bg-gradient-secondary mx-2" href="./index.php?page=parcel_list">Cancel</a>
       </div>
     </div>
