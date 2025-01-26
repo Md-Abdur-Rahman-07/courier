@@ -6,16 +6,6 @@ SET time_zone = "+06:00";
 
 
 
---
--- Database: `cms_db`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `branches`
---
-
 CREATE TABLE `branches` (
   `id` int(30) NOT NULL,
   `branch_code` varchar(50) NOT NULL,
@@ -38,11 +28,7 @@ INSERT INTO `branches` (`id`, `branch_code`, `street`, `city`, `state`, `zip_cod
 (3, 'ct003', 'Agrabad', 'Chittagong', 'Chittagong', '4100', 'Bangladesh', '+8801122334455', '2025-01-25 11:30:00');
 
 
--- --------------------------------------------------------
 
---
--- Table structure for table `parcels`
---
 
 CREATE TABLE `parcels` (
   `id` int(30) NOT NULL,
@@ -69,9 +55,7 @@ CREATE TABLE `parcels` (
 
 INSERT INTO `parcels` (`id`, `reference_number`, `sender_name`, `sender_address`, `sender_contact`, `recipient_name`, `recipient_address`, `recipient_contact`, `type`, `from_branch_id`, `to_branch_id`, `weight`, `height`, `width`, `length`, `price`, `status`, `date_created`) VALUES
 (1, '20220101', 'Eshan', 'Mansurabad, Chittagong', '+880123456789', 'Niloy', 'Gulshan, Dhaka', '+880987654321', 1, '1', '2', '30kg', '12in', '12in', '15in', 2500, 1, '2025-01-25 10:30:00'),
-
 (2, '20220102', 'Niloy', 'Gulshan, Dhaka', '+8801122334455', 'Nahid', 'Uttara, Dhaka', '+8809988776655', 2, '2', '3', '20kg', '12in', '12in', '15in', 2000, 2, '2025-01-25 11:00:00'),
-
 (3, '20220103', 'Raihan', 'Chandanaish, Chittagong', '+880123123123', 'Tasrik', 'Kawran Bazar, Dhaka', '+8805544332211', 1, '1', '2', '15kg', '10in', '10in', '12in', 1500, 3, '2025-01-25 11:30:00'),
 (4, '20220104', 'Tasrik', 'Bhairab, Dhaka', '+880121212121', 'Raihan', 'Halishahar, Chittagong', '+8809988776655', 2, '2', '1', '25kg', '14in', '14in', '18in', 2200, 4, '2025-01-25 12:00:00'),
 (5, '20220105', 'Safin', 'Oxygen, Chittagong', '+8805566778899', 'Eshan', 'Gulshan, Dhaka', '+880987654321', 1, '1', '2', '18kg', '11in', '11in', '13in', 1800, 5, '2025-01-25 12:30:00'),
@@ -161,6 +145,10 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `type`,
 (3, 'Md', 'Raihan', 'raihan.02@gmail.com', 'raihan02', 2, 3, '2020-11-27 13:32:12'),
 (4, 'Md', 'S Raihan', 'raihan.29@gmail.com', 'raihan29', 2, 3, '2020-11-27 13:32:12'),
 (5, 'Md', 'Tasrik', 'tasrik.23@gmail.com', 'tasrik23', 2, 2, '2020-11-27 13:32:12');
+
+-- update users
+-- set type=1
+-- where id=3;
 
 --
 -- Indexes for dumped tables

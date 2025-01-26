@@ -122,8 +122,8 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2025 - </strong>
-    All rights reserved.
+    <strong>version - 1.2</strong>
+   
     <div class="float-right d-none d-sm-inline-block">
       <b><?php echo $_SESSION['system']['name'] ?></b>
     </div>

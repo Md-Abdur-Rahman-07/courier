@@ -46,12 +46,12 @@ header("location:index.php?page=home");
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="icheck-dark">
+            <!-- <div class="icheck-dark">
               <input type="checkbox" id="remember">
               <label for="remember">
                 Remember Me me
               </label>
-            </div>
+            </div> -->
           </div>
           <!-- /.col -->
           <div class="col-4">
